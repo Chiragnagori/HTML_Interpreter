@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+    function myfunc(){
+        
+        x=document.getElementById("d1");
+        x.innerHTML=z.value;
+
+    }
+</script>
+<style>
+
+body {
+  font-family: Arial;
+  color: white;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  
+}
+
+.left {
+  left: 0;
+  
+}
+
+.right {
+  right: 0;
+  background-color: rgb(47, 42, 42);
+}
+
+</style>
+</head>
+<body>
+
+<div class="split left">
+  
+    <textarea  id="z" onkeyup="myfunc()
+    " rows="100%" cols="100%" ></textarea>
+  
+</div>
+
+<div class="split right">
+   <div id="d1">
+       Enter your HTML code in Left side.
+       <br>
+       <br>
+       Thank You !!
+
+   </div>
+</div>
+     
+</body>
+</html> 
